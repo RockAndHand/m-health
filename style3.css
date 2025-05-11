@@ -1,0 +1,97 @@
+
+:root {
+  --primary-color: #0d47a1;  /* Dark blue for headings */
+  --accent-color: #0091EA;   /* Bright blue for buttons & highlights */
+  --bg-color: #E3F2FD;       /* Light blue background */
+  --container-bg: #ffffff;   /* White container */
+  --question-bg: #e0f7fa;    /* Very light teal for question boxes */
+  --text-color: #333;        /* Dark text */
+  --btn-hover: #007ac1;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  background: var(--container-bg);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+}
+
+h1 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+p.description {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.question {
+  text-align: left;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: var(--question-bg);
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.question h3 {
+  margin: 0 0 10px;
+  color: var(--primary-color);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+button {
+  background-color: var(--accent-color);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--btn-hover);
+}
+
+#result {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f1f8e9;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+#result h2 {
+  color: var(--primary-color);
+}
+
+canvas {
+  max-width: 100%;
+  margin-top: 20px;
+}

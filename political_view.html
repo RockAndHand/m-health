@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style3.css">
+  <title>Political & Social View Assessment</title>
+  <!-- Include Chart.js library from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+ 
+</head>
+<body>
+    <div class="container">
+        <h1>Political View Assessment</h1>
+        <div class="controls">
+          <p>Select the number of questions for your assessment:</p>
+          <select id="numQuestions">
+            <!-- Allow selection from 25 to 50 (you can add more options if needed) -->
+            <option value="10">10 Questions</option>
+            <option value="25">25 Questions</option>
+            <option value="30">30 Questions</option>
+            <option value="35">35 Questions</option>
+            <option value="40">40 Questions</option>
+            <option value="45">45 Questions</option>
+            <option value="50">50 Questions</option>
+          </select>
+          <button id="generateQuiz">Generate Quiz</button>
+        </div>
+        
+        <!-- The dynamic quiz form will be generated here -->
+        <form id="quizForm"></form>
+        
+        <!-- Submit button appears after quiz generation -->
+        <button id="submitQuiz" style="display:none;">Submit Assessment</button>
+        
+        <!-- Results will be displayed here -->
+        <div id="result"></div>
+        <div id="result">
+            <canvas id="resultChart"></canvas>
+          </div>
+          
+      </div>
+    <!-- Result Section with Chart Canvas -->
+    
+  </div>
+  
+<script src="scriptpoly.js"></script>
+</body>
+</html>
